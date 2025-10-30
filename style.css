@@ -1,1 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+  margin: 0;
+  font-family: "Avenir LT Std", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: black;
+  color: white;
+  position: relative; 
+}
+
+
+#menu-burger-contenu {
+  flex: 1;
+  display: flex; 
+  justify-content: center;
+  gap: 30px;
+}
+
+#menu-burger-contenu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#btn-header-contact {
+  padding: 10px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  margin-right: 4%;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+#burger-icon {
+    display: none; 
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem; 
+    cursor: pointer;
+    padding: 0 4%; 
+    line-height: 1;
+    z-index: 100;
+}
+
+@media (max-width: 900px) {
+    header {
+        justify-content: flex-end; 
+        align-items: center;
+    }
+    
+
+  
+    #btn-header-contact {
+        display: block; 
+        order: 1; 
+        margin-right: 15px; 
+        margin-left: auto; 
+    }
+
+    #burger-icon {
+        display: block; 
+        order: 2; 
+        padding-left: 0; 
+        padding-right: 4%; 
+    }
+    
+    #menu-burger-contenu {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ #menu-burger-contenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        background-color: rgba(0, 0, 0, 0.95); 
+        padding-top: 100px; 
+        z-index: 90; 
+    }
+    
+    #menu-toggle:checked ~ #menu-burger-contenu a {
+        font-size: 1.5rem;
+        padding: 15px 0;
+        width: 80%;
+        text-align: center;
+    }
+    
+    header {
+        z-index: 100;
+    }
+}
