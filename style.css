@@ -114,4 +114,111 @@ header {
     header {
         z-index: 100;
     }
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.a-propos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 5vw;
+  gap: 50px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.content-left,
+.content-right,
+.image-photographe {
+  flex: 1 1 300px; 
+  min-width: 280px;
+}
+
+.content-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.content-left h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.content-left p,
+.content-right p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.image-photographe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-photographe img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .a-propos {
+    gap: 40px;
+    padding: 50px 5vw;
+  }
+
+  .content-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-left h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .a-propos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-left,
+  .content-right,
+  .image-photographe {
+    max-width: 90%;
+  }
+
+  .image-photographe img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .a-propos {
+    padding: 30px 20px;
+  }
+
+  .content-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-left h3 {
+    font-size: 1rem;
+  }
+
+  .image-photographe img {
+    max-width: 100%;
+  }
 }
