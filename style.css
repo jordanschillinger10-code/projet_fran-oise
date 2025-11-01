@@ -274,3 +274,70 @@ body {
     max-width: 100%;
   }
 }
+/* Mise en page globale */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  font-family: sans-serif;
+}
+
+/* Conteneur carré 300x300 */
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image ajustée au conteneur carré */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Remplit le carré sans déformer */
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+/* Overlay texte */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+}
+
+/* Effet au survol */
+.image-container:hover img {
+  opacity: 0.3;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Optionnel : effet mobile (tap) */
+@media (hover: none) {
+  .overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .image-container img {
+    opacity: 0.6;
+  }
+}
