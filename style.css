@@ -335,3 +335,32 @@ body {
     opacity: 0.6;
   }
 }
+.footer-text p {
+    text-align: justify;
+}
+
+
+.img-placeholder-wrapper {
+    
+    max-width: 260px;
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.input-dark::placeholder {
+   
+    color: #9ca3af; 
+}
