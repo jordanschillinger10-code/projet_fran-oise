@@ -1,4 +1,4 @@
-/* --- STYLES GÉNÉRAUX --- */
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,7 +10,6 @@ body {
   color: black;
 }
 
-/* --- STYLES DU HEADER ET DE LA NAVIGATION --- */
 header {
   width: 100%;
   display: flex;
@@ -21,7 +20,7 @@ header {
   background-color: black;
   color: white;
   position: relative; 
-  z-index: 100; /* Assure que le header est au-dessus de tout */
+  z-index: 100;
 }
 
 #menu-burger-contenu {
@@ -47,7 +46,6 @@ header {
   margin-right: 4%;
 }
 
-/* --- STYLES DU MENU BURGER (Mobile) --- */
 #menu-toggle {
     display: none;
 }
@@ -112,7 +110,6 @@ header {
     }
 }
 
-/* --- STYLES DE LA SECTION PRÉSENTATION --- */
 #presentation {
   position: relative;
   display: flex;
