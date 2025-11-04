@@ -172,7 +172,6 @@ body {
   background-color: #000;
   color: #fff;
 }
-
 .a-propos {
   display: flex;
   justify-content: space-between;
@@ -181,6 +180,8 @@ body {
   gap: 50px;
   flex-wrap: wrap;
   box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
 }
 
 .content-left,
@@ -274,7 +275,6 @@ body {
     max-width: 100%;
   }
 }
-
 body {
   margin: 0;
   padding: 0;
