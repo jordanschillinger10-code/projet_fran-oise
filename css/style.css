@@ -1,11 +1,9 @@
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   color: black;
 }
@@ -20,8 +18,8 @@ header {
   background-color: black;
   color: white;
   position: relative; 
+  z-index: 100;
 }
-
 
 #menu-burger-contenu {
   flex: 1;
@@ -46,7 +44,6 @@ header {
   margin-right: 4%;
 }
 
-
 #menu-toggle {
     display: none;
 }
@@ -69,8 +66,6 @@ header {
         align-items: center;
     }
     
-
-  
     #btn-header-contact {
         display: block; 
         order: 1; 
@@ -110,10 +105,6 @@ header {
         padding: 15px 0;
         width: 80%;
         text-align: center;
-    }
-    
-    header {
-        z-index: 100;
     }
 }
 
@@ -168,7 +159,6 @@ header {
     cursor: pointer;
     font-weight: bold;
 }
-
 .a-propos {
   display: flex;
   justify-content: space-between;
@@ -272,8 +262,6 @@ header {
     max-width: 100%;
   }
 }
-
-
 #galerie {
   padding: 60px 10%;
   text-align: center;
@@ -351,7 +339,6 @@ header {
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
     .galerie-conteneur {
         grid-template-columns: repeat(2, 1fr); 
@@ -363,9 +350,8 @@ header {
         grid-template-columns: 1fr; 
     }
 }
-
-
 .footer {
+    margin: 0;
     padding: 60px 5vw;
     font-family: 'Avenir LT Std', sans-serif;
     background-color: #000;
@@ -381,19 +367,19 @@ header {
 }
 
 .footer-left {
-    flex: 1 1 350px; 
+    flex: 1 1 350px;
 }
 
 .footer-center {
-    flex: 1 1 250px; 
+    flex: 1 1 250px;
     display: flex;
     justify-content: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .footer-right {
     flex: 1 1 300px;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 .footer-left h2 {
@@ -418,16 +404,16 @@ header {
     width: 100%;
     height: auto;
     max-width: 300px;
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    
+   
     transform: scale(1);
-    transition: transform 0.4s ease-in-out; 
+    transition: transform 0.4s ease-in-out;
     cursor: pointer;
 }
 
 .footer-image:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .footer-newsletter p {
@@ -499,7 +485,7 @@ header {
     }
 
     .footer-image {
-        max-width: 80%; 
+        max-width: 80%;
         margin-bottom: 30px;
     }
 
@@ -508,7 +494,7 @@ header {
     }
 
     .footer-left p {
-        text-align: center; 
+        text-align: center;
     }
 
     .footer-newsletter form {
@@ -521,3 +507,4 @@ header {
         max-width: 100%;
     }
 }
+
