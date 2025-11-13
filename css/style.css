@@ -116,7 +116,7 @@ header {
   align-items: center;
   padding: 100px 10%;
   height: 600px; 
-  background-image: url("new_york.jpeg");
+  background-image: url("../image/new_york.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
